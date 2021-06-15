@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -79,7 +78,74 @@
       font-size: 30px;
       margin: 20px 0;
   }
+
+  .explore__menu__text {
+      font-size: 30px;
+      margin-top: 50px;
+      margin-bottom: 30px;
+      text-align: center;
+  }
+
+  .food__card{
+      background-color: #fff;
+      border-radius: 8px;
+      margin-bottom: 15px;
+  }
+
+  .food__card__image__container {
+      width: 100%;
+  }
   
+  .food__image {
+      width: 100%;
+      border-radius: 8px 8px 0 0; 
+  }
+
+  .food__card__description{
+      padding: 15px;
+  }
+
+  .restaurant__text {
+      font-size: 30px;
+      margin-top: 50px;
+      margin-bottom: 30px;
+      text-align: center;
+  }
+
+  .restaurant__images__container {
+      width: 100%;
+  }
+
+  .restaurant__images__row1, 
+  .restaurant__images__row2 {
+      width: 100%; 
+      display: flex;
+      gap: 5px;
+  }
+
+  .restaurant__images__row1 {
+      align-items: baseline;
+      margin-bottom: 3px;
+  }
+
+  .restaurant__image1, 
+  .restaurant__image4 {
+      width: 100%;
+      height: 150px;
+  }
+
+  .restaurant__image2, 
+  .restaurant__image3 {
+      width: 120%;
+      height: 200px;
+  }
+
+  .rest1, .rest2, .rest3, .rest4 {
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+  }
+
   @media (min-width: 768px) {
     .navbar {
       justify-content: space-between;
@@ -92,7 +158,77 @@
         align-items: center;
         margin-top: 20px;
     }
+    .explore__menu__lists {
+        margin-top: 40px;
+        display: flex;
+        gap: 15px;
+        padding: 0 30px;
+    }
+    #pizza__card {
+        margin-top: -20px;
+        margin-bottom: 35px;
+    }
+    .explore__menu__view__more {
+        display: flex;
+        justify-content: center;
+    }
+    .explore__menu__container {
+        position: relative;
+    }
+    .explore__menu__gradient__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(
+         to right,
+         #ff512f 0%,
+         #dd2476 51%,
+         #ff512f 100%
+        );
+        transform: skewY(-5deg);
+        z-index: -3;
+    }
+    .explore__menu__container {
+        margin-top: 30px;
+    }
+    .restaurant__container {
+        display: flex;
+        align-items: center;
+    }
+    .restaurant__text {
+        width: 100%;
+        font-size: 40px;
+    }
   }
+
+  .email__subcribe__container {
+    margin-top: 3rem;
+    width: 100%;
+    padding: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .email__subcribe__input__field {
+    display: flex;
+    align-items: center;
+  }
+  
+  .email__input {
+    border: 1px solid #ee89a0;
+    background-color: #fcedf0;
+    color: #1d3557;
+    font-weight: 700;
+    padding: 0.5rem;
+    border-radius: 4px;
+  }
+  
+  .email__input::placeholder {
+    color: #bdbcbc;
+  }
+  
   
   @media (min-width: 1020px) {
 
@@ -112,6 +248,12 @@
     .hero__text {
         font-size: 50px;
     }
+    .explore__menu__lists{
+        gap: 40px;
+    }
+    .explore__menu__text {
+        font-size: 50px;
+    }
   }
 
   @media (min-width: 1300px) {
@@ -120,66 +262,3 @@
       }
   }
   
-=======
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* TO use Box Model  */
-  }
-  
-  body {
-    font-family: "Merriweather", serif;
-    background-color: #ebf2ff;
-  }
-  
-  .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #fff;
-  }
-  
-  .navbar__brand {
-    width: 100px;
-  }
-  
-  .navbar__logo {
-    width: 100%;
-  }
-  
-  .nav__item {
-    background-image: linear-gradient(
-      to right,
-      #ff512f 0%,
-      #dd2476 51%,
-      #ff512f 100%
-    );
-    color: #fff;
-    border: none;
-    padding: 12px;
-    border-radius: 6px;
-    cursor: pointer;
-  }
-  
-  .nav__item:hover {
-    border: 2px solid blue;
-  }
-  
-  @media (min-width: 768px) {
-    .navbar {
-      justify-content: space-between;
-      padding: 2px 30px;
-    }
-  }
-  
-  @media (min-width: 1020px) {
-    .navbar__brand {
-      width: 150px;
-    }
-    .nav__item {
-      padding: 20px;
-      font-size: 20px;
-    }
-  }
-  
->>>>>>> 58795e70b9d71b96a02142357f98f7a9ab864b40
